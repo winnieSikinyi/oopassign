@@ -3,6 +3,7 @@ fun main() {
     myname.eat(27)
     myname.speak("Jesus loves me")
     myname.birthday(1)
+    println(myname.age)
 
     //Qn2
 val owner =User("Kadogo", "Mumbi", "mumbikadogo@gmail.com", 767854321)
@@ -20,7 +21,7 @@ class Human(var name: String, var age: Int, var weight: Int){
         println("$speech")
     }
     fun birthday(older: Int){
-    age = age
+    age += older
 
     }
 
